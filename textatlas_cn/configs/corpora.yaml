@@ -1,0 +1,47 @@
+# Chinese corpora used by clean_text_synth & text_vision_blend.
+# Loaders are registered in `textatlas_cn/common/corpora.py`.
+corpora:
+  - name: wudao
+    type: huggingface
+    repo: BAAI/WuDao
+    split: train
+    field: content
+    languages: [zh]
+    sampling_weight: 0.4
+    license: BAAI-OpenLicense
+  - name: chinese_webtext
+    type: huggingface
+    repo: CASIA-LM/ChineseWebText-1.0
+    split: train
+    field: text
+    languages: [zh]
+    sampling_weight: 0.3
+    license: cc-by-4.0
+  - name: yi_corpus
+    type: huggingface
+    repo: 01-ai/Yi-Corpus-zh
+    split: train
+    field: text
+    languages: [zh]
+    sampling_weight: 0.15
+    license: yi-license
+  - name: skywork_pile
+    type: huggingface
+    repo: Skywork/SkyPile-150B-zh
+    split: train
+    field: text
+    sampling_weight: 0.15
+    license: cc-by-nc-4.0
+  - name: chinese_wiki
+    type: huggingface
+    repo: pleisto/wikipedia-cn-20230720-filtered
+    split: train
+    field: completion
+    sampling_weight: 0.2
+  - name: wit_zh
+    type: huggingface
+    repo: google/wit
+    split: train
+    languages: [zh]
+    field: caption_reference_description
+    sampling_weight: 0.1

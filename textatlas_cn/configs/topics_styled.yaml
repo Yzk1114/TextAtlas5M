@@ -1,0 +1,118 @@
+# 18 个 StyledTextSynth-CN 主题（与原论文 18 topics 对齐）。
+# 每个主题包含：
+#   prompt_type:  general | seed | template
+#   render_strategy:  bbox | template
+#   detector_class:  yolo / rtdetr 共享分组
+topics:
+  - name: blackboard_classroom
+    cn: 黑板教室
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: blackboard
+    word_count: [60, 160]
+  - name: news_show
+    cn: 新闻播报
+    prompt_type: template
+    render_strategy: template
+    detector_group: news
+    word_count: [40, 120]
+  - name: banner
+    cn: 横幅
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: banner
+    word_count: [10, 60]
+  - name: silver_screen
+    cn: 银幕
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: screen
+    word_count: [40, 160]
+  - name: notice_board
+    cn: 公告板
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: board
+    word_count: [40, 160]
+  - name: advertisement_board
+    cn: 广告牌
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: board
+    word_count: [40, 160]
+  - name: tv_shopping
+    cn: 电视购物
+    prompt_type: seed
+    seed: "主持人站在桌边手持商品，旁边竖立着广告牌。"
+    render_strategy: bbox
+    detector_group: board
+    word_count: [40, 120]
+  - name: billboard
+    cn: 户外广告牌
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: billboard
+    word_count: [40, 160]
+  - name: booklet_page
+    cn: 册页
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: booklet
+    word_count: [80, 200]
+  - name: academic_report
+    cn: 学术报告
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: report
+    word_count: [80, 200]
+  - name: alumni_profile
+    cn: 校友档案
+    prompt_type: template
+    render_strategy: template
+    detector_group: profile
+    word_count: [60, 160]
+  - name: tablet_screen
+    cn: 平板屏幕
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: screen
+    word_count: [40, 120]
+  - name: printed_paper
+    cn: 印刷纸张
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: paper
+    word_count: [80, 200]
+  - name: cinema_poster
+    cn: 电影海报
+    prompt_type: template
+    render_strategy: template
+    detector_group: poster
+    word_count: [40, 120]
+    text_provider: vlm
+  - name: packing_box
+    cn: 包装盒
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: packing_box
+    word_count: [40, 120]
+  - name: weather_report
+    cn: 天气预报
+    prompt_type: seed
+    seed: "主持人站在演播室，背后大屏显示各地天气，前景占画面 1/3 的白色矩形框。"
+    render_strategy: template
+    detector_group: weather
+    word_count: [40, 120]
+  - name: instruction_manual
+    cn: 说明书
+    prompt_type: seed
+    seed: "说明书竖直放置，旁边摆放着对应的产品。"
+    render_strategy: bbox
+    detector_group: paper
+    word_count: [80, 200]
+  - name: protest_banner
+    cn: 标语条幅
+    prompt_type: general
+    render_strategy: bbox
+    detector_group: banner
+    word_count: [10, 30]
