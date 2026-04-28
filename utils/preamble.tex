@@ -1,0 +1,100 @@
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{xspace}
+\newcommand{\DatasetName}{TextAtlas5M\xspace}
+\newcommand{\EvalDatasetName}{TextAtlasEval\xspace}
+
+\usepackage{bbding} %for package
+
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{nicematrix} % part column color
+\usepackage{tablefootnote}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage{booktabs}
+
+\newcommand*\colorcmark[1]{%
+  \expandafter\newcommand\csname #1cmark\endcsname{\textcolor{#1}{\ding{51}}}%
+}
+\colorcmark{green}
+
+\newcommand*\colorxmark[1]{%
+  \expandafter\newcommand\csname #1xmark\endcsname{\textcolor{#1}{\ding{55}}}%
+}
+
+\definecolor{Highlight}{HTML}{39b54a}  % green
+
+\newcommand{\hl}[1]{\textcolor{Highlight}{#1}}
+
+\colorxmark{red}
+
+
+\newcommand\tldrtitlefont[1]{{\usefont{T1}{cinzeldecorativebold}{m}{n}#1}}
+\newcommand\tldrfont[1]{{\usefont{T1}{cinzeldecorative}{m}{n}#1}}
+\definecolor{titlecolor}{rgb}{0.6,0.4,0.8}
+\newcommand\tldrcolor[1]{{\textcolor{titlecolor}{#1}}}
+
+
+
+
+\usepackage{pifont}
+\usepackage{tikz}
+%other format of font
+\usepackage[T1]{fontenc}
+\newlength\savewidth\newcommand\shline{\noalign{\global\savewidth\arrayrulewidth
+  \global\arrayrulewidth 1pt}\hline\noalign{\global\arrayrulewidth\savewidth}}
+\newcommand{\tablestyle}[2]{\setlength{\tabcolsep}{#1}\renewcommand{\arraystretch}{#2}\centering\footnotesize}
+\renewcommand{\paragraph}[1]{\vspace{1.25mm}\noindent\textbf{#1}}
+\newcommand\blfootnote[1]{\begingroup\renewcommand\thefootnote{}\footnote{#1}\addtocounter{footnote}{-1}\endgroup}
+
+\newcolumntype{x}[1]{>{\centering\arraybackslash}p{#1pt}}
+\newcolumntype{y}[1]{>{\raggedright\arraybackslash}p{#1pt}}
+\newcolumntype{z}[1]{>{\raggedleft\arraybackslash}p{#1pt}}
+
+\newcommand{\app}{\raise.17ex\hbox{$\scriptstyle\sim$}}
+\newcommand{\mypm}[1]{\color{gray}{\tiny{$\pm$#1}}}
+\newcommand{\x}{{\times}}
+\definecolor{deemph}{gray}{0.6}
+\newcommand{\gc}[1]{\textcolor{deemph}{#1}}
+\definecolor{baselinecolor}{gray}{.9}
+\newcommand{\baseline}[1]{\cellcolor{baselinecolor}{#1}}
+\definecolor{zeroshotcolor}{gray}{.3}
+\newcommand{\zeroshot}[1]{\cellcolor{zeroshotcolor}{#1}}
+\newcommand{\authorskip}{\hspace{2.5mm}}
+\definecolor{LightCyan}{rgb}{0.92,1,1}
+\newcommand{\linjie}[1]{\textcolor{red}{(linjie: #1)}}
+
+
+
+% for appendix call gpt4o demos
+\usepackage[most]{tcolorbox} % 绘制圆角边框
+\usepackage{setspace}       % 控制行间距
+% 定义圆角边框样式
+\tcbset{
+    mybox/.style={
+        colback=white,           % 背景颜色
+        colframe=blue,           % 边框颜色
+        rounded corners,     % 圆角样式
+        arc=5pt,                % 圆角半径
+        boxrule=.5mm,             % 边框宽度
+        left=2mm, right=2mm,   % 左右内边距
+        top=2mm, bottom=2mm,   % 上下内边距
+        width=\textwidth,     % 边框宽度为页面宽度的 90%
+        before skip=5mm,        % 上边距
+        after skip=5mm          % 下边距
+    }
+}
+
+
+% Add these to your preamble
+\usepackage{xcolor,colortbl}
+\definecolor{bestgreen}{RGB}{0,120,0}
+\definecolor{secondpink}{RGB}{230,100,150}
+\definecolor{grayrow}{gray}{0.95}
+
+\newcommand{\cellbest}[1]{\textbf{\textcolor{bestgreen}{#1}}}
+\newcommand{\cellsecond}[1]{\textbf{\textcolor{secondpink}{#1}}}
+\usepackage{wrapfig}
+
+%contents in appendix
+\usepackage{titletoc}

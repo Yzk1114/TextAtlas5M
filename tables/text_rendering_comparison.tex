@@ -1,0 +1,84 @@
+\begin{table*}[t]
+\caption{\textbf{Evaluation on \EvalDatasetName across all four subsets.} Metrics include CLIP Score (CS) $\uparrow$, OCR Accuracy (Acc.) $\uparrow$, F1 Score (F1.) $\uparrow$, and Character Error Rate (CER) $\downarrow$. 
+Gray rows denote closed-source models. Best and second-best values are highlighted in \textcolor{bestgreen}{green} and \textcolor{secondpink}{pink}, respectively.
+$\dag$ means model fine-tuned on our \DatasetName.
+Janus Pro 1B~\cite{januspro} use $1024 \times 1024$ resolution and Lumina-mgpt 7B~\cite{lumina_mgpt} adopt $512 \times 512$ resolution.
+GPT4o, Dall-E 3 and SD-3.5 Large use  $1024 \times 1024$ resolution and Grok 3 use  $1024 \times 768$ resolution.
+}
+\centering
+\label{tab:eval_all_subsets}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.1}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{l|x{17}x{18}x{18}x{17}|x{17}x{18}x{18}x{17}|x{17}x{18}x{18}x{17}|x{17}x{18}x{18}x{17}}
+\toprule
+\textbf{Method} 
+& \multicolumn{4}{c|}{\textbf{CleanTextSynth}} 
+& \multicolumn{4}{c|}{\textbf{TextVisionBlend}} 
+& \multicolumn{4}{c|}{\textbf{StyledTextSynth}} 
+& \multicolumn{4}{c}{\textbf{TextScenesHQ}} \\
+& CS & Acc & F1 & CER 
+& CS & Acc & F1 & CER 
+& CS & Acc & F1 & CER 
+& CS & Acc & F1 & CER \\
+\midrule
+AnyText & 0.21 & 0.18 & 0.34 & 0.99 & -& - & - & - & 0.25 & 0.35 & 0.66 & 0.98 & 0.22 & 0.42 & 0.81 & 0.95 \\
+TextDiffuser-2 & 0.23 & 1.41 & 2.66 & 0.98 & - & - & - & - & 0.25 & 0.76 & 1.46 & 0.99 & 0.23 & 0.66 & 1.25 & 0.96 \\
+PixArt-$\Sigma$ & 0.24 & 0.69 & 1.15 & 0.92 & \cellsecond{0.19} & 2.40 & 1.57 & 0.83 & 0.28 & 0.42 & 0.62 & 0.90 & 0.23 & 0.34 & 0.53 & 0.91 \\
+Infinity-2B & 0.24 & 0.11 & 1.93 & 0.88 & 0.20 & 2.98 & 3.44 & 0.83 & 0.27 & 0.80 & 1.42 & 0.93 & 0.23 & 1.06 & 1.74 & 0.88 \\
+SD-3.5 Large & \cellsecond{0.28} & 12.0 & 18.2 & 0.84 & 0.18 & 14.55 & 16.25 & 0.88 & 0.28 & 27.21 & 33.86 & 0.73 & 0.24 & 19.03 & 24.45 & 0.73 \\
+Qwen Image &-  & - & - & - & 0.18 & \cellbest{81.02} & \cellbest{58.65} & \cellbest{0.57} & \cellbest{0.30} & \cellbest{66.20} & \cellbest{73.92} & \cellbest{0.35} & \cellbest{0.33} & \cellbest{71.82} & \cellbest{68.70} & \cellbest{0.34} \\
+\midrule
+Janus Pro 1B(1024) & 0.23 & 0.27 & 0.52 & 0.96 & \cellbest{0.22} & 0.76 & 1.31 & 0.94 & 0.27 & 0.06 & 0.12 & 0.98 & 0.27 & 0.25 & 0.48 & 0.98 \\
+Janus Pro 1B(1024)$\dag$ & 0.27 & 5.23 & 8.97 & 0.65 & 0.18 & 13.61 & 17.55 & 0.61 & 0.28 & 12.75 & 17.37 & 0.75 & -- & -- & -- & -- \\
+% Janus Pro 1B$\dag$ & 0.27 & 5.23 & 8.97 & 0.65 & 0.18 & 13.61 & 17.55 & 0.61 & 0.28 & 12.75 & 17.37 & 0.75 & 0.24 & 0.71 & 1.25 & 0.93 \\
+Lumina-mgpt7B(512)& 0.23 & 0.12 & 0.24 & 0.98 & 0.19 & 0.00 & 0.00 & 0.94 & 0.27 & 0.09 & 0.17 & 0.98 & 0.29 & 0.19 & 0.30 & 0.93 \\
+Lumina-mgpt7B(512)$\dag$ & {0.27} & {32.90} & {45.93} &{0.35} & 0.16 & {56.61} & {60.18} & {0.26} & 0.27 & {5.43} & {6.71} & {0.71} &{0.27} & {3.83} & {4.65} & {0.78} \\
+Lumina-mgpt7B(1024) & 0.24 & 0.32 & 0.45 & 0.97 & 0.18 & 0.03 & 0.05 & 0.95 & 0.27 & 0.13 & 0.21 & 0.97 & 0.28 & 0.22 & 0.35 & 0.92 \\
+Lumina-mgpt7B(1024)$\dag$ &\cellbest{0.29}&\cellsecond{48.55}&\cellsecond{59.67}&\cellsecond{0.31}&{0.17}&\cellsecond{65.34}&\cellsecond{70.32}&\cellsecond{0.22}& \cellsecond{0.29}&\cellsecond{27.93}&\cellsecond{20.20}& \cellsecond{0.49} & {0.27} & \cellsecond{6.44} & \cellsecond{9.34} & \cellsecond{0.79} \\
+Pixart-$\alpha$ 0.6B(512) &0.25&0.23&0.42&0.98& 0.17 & 0.04 & 0.09 & 0.96 & 0.28 & 0.05 & 0.12 & 0.98 &  0.29 & 0.13 & 0.28 & 0.94 \\
+Pixart-$\alpha$ 0.6B(512)$\dag$&\cellsecond{0.28}&39.14&50.24&0.33&0.16&58.21&54.32&0.27& \cellsecond{0.29} & 22.10 & 25.14 & 0.63 & \cellsecond{0.30} & 3.63 & 4.30 & 0.84 \\
+\midrule
+\rowcolor{grayrow}
+Grok3 & {0.28} & 31.08 & 40.81 & 0.44 & 0.17 & 41.54 & 44.22 & 0.57 & {0.29} & 15.82 & 21.4 & 0.73 & 0.32 & 35.07 & 37.94 & {0.57} \\
+\rowcolor{grayrow}
+DALL·E 3 & -- & -- & -- & -- & {0.19} & 8.38 & 7.94 & 0.93 & {0.29} & 30.58 & 38.25 & 0.78 & {0.34} & 69.26 & 51.63 & 0.67 \\
+\rowcolor{grayrow}
+Nano Banana & 0.25 & 65.80 & 73.66 & 0.23 & 0.15 & {93.49} & {80.30} & {0.26} &{0.29} & 64.09 & 70.93 & 0.39 & {0.33} & {75.15} & {70.99} & 0.36 \\
+\rowcolor{grayrow}
+GPT-4o & {0.27} & {60.69} & 74.44 & {0.36} & 0.15 & {91.78} & {82.07} & {0.15} & {0.30} &{77.47} & {80.76} &{0.21} & {0.33} & {82.88} & {78.68} &{0.32} \\
+\bottomrule 
+\end{tabular}
+}
+\end{table*}
+
+
+% \begin{table*}[ht]
+% \caption{\textbf{Evaluation on \EvalDatasetName: Interleaved and VeryEasy splits.}\\
+% Metrics: CLIP Score (CS), OCR Accuracy (Acc.), F1 score (F1.), and Character Error Rate (CER).}
+% \centering
+% \label{tab:gen_results_ve_int}
+% \footnotesize
+% \begin{tabular}{l|x{15}x{23}x{23}x{23}|x{15}x{24}x{24}x{24
+% }}
+% \toprule
+% \textbf{Method} & \multicolumn{4}{c|}{\textbf{CleanTextSynth-Eval}} & \multicolumn{4}{c}{\textbf{TextVisionBlend-Eval}} \\
+%  & {CS$\uparrow$} & {OCR (Acc.)$\uparrow$} & {OCR (F1.)$\uparrow$} & {OCR (CER.)$\downarrow$}
+%  & {CS$\uparrow$} & {OCR (Acc.)$\uparrow$} & {OCR (F1.)$\uparrow$} & {OCR (CER.)$\downarrow$} \\
+% \midrule
+% AnyText          & 0.2145 & 0.18 & 0.34 & 0.99 & 0.2501 & 0.35 & 0.66 & 0.98 \\
+% TextDiffuser-2   & 0.2260 & 1.41 & 2.66 & 0.98 & 0.2510 & 0.76 & 1.46 & 0.99 \\
+% PixArt-$\Sigma$  & 0.2381 & 0.69 & 1.15 & 0.92 & 0.2764 & 0.42 & 0.62 & 0.90 \\
+% Infinity-2B      & 0.2429 & 0.11 & 1.93 & 0.88 & 0.2727 & 0.80 & 1.42 & 0.93 \\
+% Grok3            & \bf 0.2848 & 31.08 & 40.81 & 0.44 & 0.2854 & 15.82 & 21.40 & 0.73 \\
+% DALL·E 3         & -- & -- & -- & -- & 0.2938 & 30.58 & 38.25 & 0.78 \\
+% SD-3.5 Large     & 0.2776 & 12.00 & 18.20 & 0.84 &  0.2849 & 27.21 & 33.86 & 0.73 \\
+% GPT-4o           & 0.2744 & \bf 60.69 & \bf 74.44 & \bf 0.36 & \bf 0.2968 & \bf 77.47 & \bf 80.76 &\bf  0.21 \\
+% \midrule
+% Chameleon       & 0.2316 & 0.12 & 0.24 & 0.98 &  0.1929 & 0 & 0 & 0.94 \\
+% Chameleon*        & 0.2651 & 32.90 & 45.93 & 0.35 &  0.1603 & 56.61 & 60.18 & 0.26 \\
+
+% \bottomrule
+% \end{tabular}
+% \end{table*}

@@ -1,0 +1,72 @@
+\documentclass{article} 
+\usepackage{utils/conference,times}
+\input{utils/math_commands.tex}
+\finalcopy 
+\usepackage{hyperref}
+\usepackage{url}
+
+\input{utils/preamble}
+
+\title{\DatasetName: A Large-Scale Dataset for Long and Structured Text Image Generation}
+
+
+\author{
+% \centering
+Alex Jinpeng Wang$^{1}$,
+Dongxing Mao$^{1}$,
+Jiawei Zhang$^{2}$,
+Weiming Han$^{2}$,
+Zhuobai Dong$^{1}$,\\
+\bf Linjie Li$^{4}$,
+\bf Yiqi Lin$^{3}$,
+\bf Zhengyuan Yang$^{4}$,
+\bf Libo Qin$^{1}$,
+\bf Fuwei Zhang$^{2}$,
+\bf Lijuan Wang$^{4}$,
+\bf Min Li$^{1}$ \\[6pt]
+$^{1}$\textbf{CSU} \quad
+$^{2}$\textbf{NUC} \quad
+$^{3}$\textbf{NUS} \quad
+$^{4}$\textbf{Microsoft} \\[6pt]
+\url{https://textatlas5m.github.io}
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\input{sections/0_Abstract}
+
+\input{sections/1_Introduction}
+
+\input{sections/2_RelatedWorks}
+
+\input{sections/3_Method}
+
+
+% \input{sections/3_2_Evaluation}
+
+\input{sections/4_Experiments}
+
+\input{sections/5_Conclusion}
+
+
+
+\bibliography{main}
+\bibliographystyle{utils/conference}
+
+\appendix
+
+
+\input{sections/7_Appendix}
+
+
+
+
+\end{document}

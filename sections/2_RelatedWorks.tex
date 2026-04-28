@@ -1,0 +1,28 @@
+\section{Related Works}
+\label{sec:related_works}
+
+\paragraph{Text-conditioned Image Synthesis:}
+Generative modeling have prominently featured diffusion-based~\cite{song2019generative,ho2020denoising,ho2022classifier} and autoregressive-based~\cite{ramesh2021zero,esser2021taming} frameworks. Diffusion models, such as DALL-E~\cite{dalle} and Parti~\cite{parti}, produce high-fidelity outputs through an iterative refinement process but are limited by slow inference speeds. 
+While autoregressive (AR) models~\cite{unifiedio2,emu,anygpt,llamagen} model images as sequential token streams by using vector quantization~\cite{van2017neural} to discretize raw pixel data into tokens, which balances efficiency and sample quality, making AR modeling increasingly popular.
+
+Despite significant progress, current methods still face challenges in generating dense, stylized text within images while maintaining high precision and aesthetic coherence.
+Our approach bridges this gap by building a carefully curated, text-rich dataset to enhance the accuracy and stylistic variety, even when conditioned on complex, lengthy prompts.
+
+
+\paragraph{Text-Image Pair Datasets for Generation:}
+MS-COCO~\cite{mscoco} and TextCaps~\cite{textcaps} are widely used image-text pair benchmarks.
+MS-COCO features descriptive annotations and TextCaps adds more contextually rich captions.
+Recently, CC3M~\cite{cc12m} and LAION~\cite{laion} further emphasize large-scale data sourced from the Web, which have been instrumental in training text-conditioned image generation models.
+However, both primarily cater to short or moderately long captions, limiting their suitability for tasks involving lengthy textual content.
+More recent efforts, Marion10M~\cite{textdiffuser} and AnyWords3M~\cite{anytext}, aim to diversify text inputs but often lack high-quality annotations or precise alignment, prioritizing visual scenes over accurate textual rendering.
+To bridge these gaps, \textbf{we introduce \DatasetName~explicitly designed for generating images from extensive and structured text}. 
+To the best of our knowledge, this is the first large-scale dataset of its kind, addressing the limitations of existing resources and enabling advancements in long text-to-image generation tasks.
+
+
+
+
+\paragraph{Visual Text Rendering:}
+Rendering text accurately in images requires balancing textural correctness, visual quality, and contextual coherence. 
+Prior work in text image synthesis is broadly categorized into two directions: structured methods~\cite{anytext,glyphcontrol,glyphdraw,textdiffuser,pixart,ca_aware}, which enforce layout guidelines to achieve precise text placement for design-oriented tasks (e.g., posters), and unconstrained approaches~\cite{dnd_transformer} that prioritize flexibility for long-text generation (e.g., documents) without extra guidelines.
+Despite recent progress, existing methods still struggle with the precise rendering of extended text due to the lack of large-scale, high-quality dense-text datasets. To address this, we introduce a diverse and comprehensive text-rich dataset that facilitates accurate and flexible text generation.
+

@@ -1,0 +1,308 @@
+\begin{thebibliography}{58}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Araujo \& Girod(2016)Araujo and Girod]{araujo2016slideshare}
+Andre Araujo and Bernd Girod.
+\newblock Slideshare dataset: Slides from topics related to engineering and science, June 2016.
+\newblock URL \url{https://exhibits.stanford.edu/data/catalog/mv327tb8364}.
+
+\bibitem[arXiv.org submitters(2024)]{arxiv_org_submitters_2024}
+arXiv.org submitters.
+\newblock arxiv dataset, 2024.
+\newblock URL \url{https://www.kaggle.com/dsv/7548853}.
+
+\bibitem[Betker et~al.(2023)Betker, Goh, Jing, Brooks, Wang, Li, Ouyang, Zhuang, Lee, Guo, et~al.]{dalle3}
+James Betker, Gabriel Goh, Li~Jing, Tim Brooks, Jianfeng Wang, Linjie Li, Long Ouyang, Juntang Zhuang, Joyce Lee, Yufei Guo, et~al.
+\newblock Improving image generation with better captions.
+\newblock \emph{Computer Science. https://cdn. openai. com/papers/dall-e-3. pdf}, 2\penalty0 (3):\penalty0 8, 2023.
+
+\bibitem[Changpinyo et~al.(2021)Changpinyo, Sharma, Ding, and Soricut]{cc12m}
+Soravit Changpinyo, Piyush Sharma, Nan Ding, and Radu Soricut.
+\newblock Conceptual 12m: Pushing web-scale image-text pre-training to recognize long-tail visual concepts.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pp.\  3558--3568, 2021.
+
+\bibitem[Chen et~al.(2023{\natexlab{a}})Chen, Huang, Lv, Cui, Chen, and Wei]{textdiffuser2}
+Jingye Chen, Yupan Huang, Tengchao Lv, Lei Cui, Qifeng Chen, and Furu Wei.
+\newblock Textdiffuser-2: Unleashing the power of language models for text rendering.
+\newblock \emph{arXiv preprint arXiv:2311.16465}, 2023{\natexlab{a}}.
+
+\bibitem[Chen et~al.(2024{\natexlab{a}})Chen, Huang, Lv, Cui, Chen, and Wei]{textdiffuser}
+Jingye Chen, Yupan Huang, Tengchao Lv, Lei Cui, Qifeng Chen, and Furu Wei.
+\newblock Textdiffuser: Diffusion models as text painters.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2024{\natexlab{a}}.
+
+\bibitem[Chen et~al.(2023{\natexlab{b}})Chen, Yu, Ge, Yao, Xie, Wu, Wang, Kwok, Luo, Lu, et~al.]{pixart}
+Junsong Chen, Jincheng Yu, Chongjian Ge, Lewei Yao, Enze Xie, Yue Wu, Zhongdao Wang, James Kwok, Ping Luo, Huchuan Lu, et~al.
+\newblock Pixart-backslash alpha: Fast training of diffusion transformer for photorealistic text-to-image synthesis.
+\newblock \emph{arXiv preprint arXiv:2310.00426}, 2023{\natexlab{b}}.
+
+\bibitem[Chen et~al.(2023{\natexlab{c}})Chen, Yu, Ge, Yao, Xie, Wu, Wang, Kwok, Luo, Lu, et~al.]{pixarta}
+Junsong Chen, Jincheng Yu, Chongjian Ge, Lewei Yao, Enze Xie, Yue Wu, Zhongdao Wang, James Kwok, Ping Luo, Huchuan Lu, et~al.
+\newblock Pixart-$alpha$: Fast training of diffusion transformer for photorealistic text-to-image synthesis.
+\newblock \emph{arXiv preprint arXiv:2310.00426}, 2023{\natexlab{c}}.
+
+\bibitem[Chen et~al.(2024{\natexlab{b}})Chen, Ge, Xie, Wu, Yao, Ren, Wang, Luo, Lu, and Li]{chen2024pixart}
+Junsong Chen, Chongjian Ge, Enze Xie, Yue Wu, Lewei Yao, Xiaozhe Ren, Zhongdao Wang, Ping Luo, Huchuan Lu, and Zhenguo Li.
+\newblock Pixart-$\sigma$: Weak-to-strong training of diffusion transformer for 4k text-to-image generation.
+\newblock In \emph{European Conference on Computer Vision}, pp.\  74--91. Springer, 2024{\natexlab{b}}.
+
+\bibitem[Chen et~al.(2024{\natexlab{c}})Chen, Tan, Cai, Xie, Zhao, Zhang, Lin, Bai, Liu, and Chang]{dnd_transformer}
+Liang Chen, Sinan Tan, Zefan Cai, Weichu Xie, Haozhe Zhao, Yichi Zhang, Junyang Lin, Jinze Bai, Tianyu Liu, and Baobao Chang.
+\newblock A spark of vision-language intelligence: 2-dimensional autoregressive transformer for efficient finegrained image generation.
+\newblock \emph{arXiv preprint arXiv:2410.01912}, 2024{\natexlab{c}}.
+
+\bibitem[Chen et~al.(2025)Chen, Wu, Liu, Pan, Liu, Xie, Yu, and Ruan]{januspro}
+Xiaokang Chen, Zhiyu Wu, Xingchao Liu, Zizheng Pan, Wen Liu, Zhenda Xie, Xingkai Yu, and Chong Ruan.
+\newblock Janus-pro: Unified multimodal understanding and generation with data and model scaling, 2025.
+\newblock URL \url{https://arxiv.org/abs/2501.17811}.
+
+\bibitem[Chen et~al.(2024{\natexlab{d}})Chen, Wu, Wang, Su, Chen, Xing, Zhong, Zhang, Zhu, Lu, et~al.]{internvl}
+Zhe Chen, Jiannan Wu, Wenhai Wang, Weijie Su, Guo Chen, Sen Xing, Muyan Zhong, Qinglong Zhang, Xizhou Zhu, Lewei Lu, et~al.
+\newblock Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp.\  24185--24198, 2024{\natexlab{d}}.
+
+\bibitem[{Common Crawl}(2025)]{commoncrawl}
+{Common Crawl}.
+\newblock Common crawl.
+\newblock \url{https://commoncrawl.org/}, 2025.
+\newblock Accessed: 2025-09-24.
+
+\bibitem[DeepMind(2025)]{nano_banana_2025}
+Google DeepMind.
+\newblock Gemini 2.5 flash image: Nano banana image editing and generation model.
+\newblock \url{https://aistudio.google.com/models/gemini-2-5-flash-image}, sep 2025.
+\newblock Accessed: 2025-09-25. Model released in August 2025, enabling fast image-to-3D figurine generation and targeted edits.
+
+\bibitem[Dubey et~al.(2024)Dubey, Jauhri, Pandey, Kadian, Al-Dahle, Letman, Mathur, Schelten, Yang, Fan, et~al.]{llama3h}
+Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle, Aiesha Letman, Akhil Mathur, Alan Schelten, Amy Yang, Angela Fan, et~al.
+\newblock The llama 3 herd of models.
+\newblock \emph{arXiv preprint arXiv:2407.21783}, 2024.
+
+\bibitem[Esser et~al.(2021{\natexlab{a}})Esser, Rombach, and Ommer]{esser2021taming}
+Patrick Esser, Robin Rombach, and Bjorn Ommer.
+\newblock Taming transformers for high-resolution image synthesis.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pp.\  12873--12883, 2021{\natexlab{a}}.
+
+\bibitem[Esser et~al.(2021{\natexlab{b}})Esser, Rombach, and Ommer]{vqgan}
+Patrick Esser, Robin Rombach, and Bjorn Ommer.
+\newblock Taming transformers for high-resolution image synthesis.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pp.\  12873--12883, 2021{\natexlab{b}}.
+
+\bibitem[Esser et~al.(2024)Esser, Kulal, Blattmann, Entezari, M{\"u}ller, Saini, Levi, Lorenz, Sauer, Boesel, et~al.]{sd3}
+Patrick Esser, Sumith Kulal, Andreas Blattmann, Rahim Entezari, Jonas M{\"u}ller, Harry Saini, Yam Levi, Dominik Lorenz, Axel Sauer, Frederic Boesel, et~al.
+\newblock Scaling rectified flow transformers for high-resolution image synthesis.
+\newblock In \emph{Forty-first International Conference on Machine Learning}, 2024.
+
+\bibitem[{GbotHQ}(2023)]{ocr_rendering}
+{GbotHQ}.
+\newblock Ocr dataset rendering.
+\newblock \url{https://github.com/GbotHQ/ocr-dataset-rendering/}, 2023.
+\newblock Accessed: 2025-09-24.
+
+\bibitem[Gupta et~al.(2016)Gupta, Vedaldi, and Zisserman]{SynthText}
+Ankush Gupta, Andrea Vedaldi, and Andrew Zisserman.
+\newblock Synthetic data for text localisation in natural images.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pp.\  2315--2324, 2016.
+
+\bibitem[Han et~al.(2024)Han, Liu, Jiang, Yan, Zhang, Yuan, Peng, and Liu]{han2024infinity}
+Jian Han, Jinlai Liu, Yi~Jiang, Bin Yan, Yuqi Zhang, Zehuan Yuan, Bingyue Peng, and Xiaobing Liu.
+\newblock Infinity: Scaling bitwise autoregressive modeling for high-resolution image synthesis.
+\newblock \emph{arXiv preprint arXiv:2412.04431}, 2024.
+
+\bibitem[Ho \& Salimans(2022)Ho and Salimans]{ho2022classifier}
+Jonathan Ho and Tim Salimans.
+\newblock Classifier-free diffusion guidance.
+\newblock \emph{arXiv preprint arXiv:2207.12598}, 2022.
+
+\bibitem[Ho et~al.(2020)Ho, Jain, and Abbeel]{ho2020denoising}
+Jonathan Ho, Ajay Jain, and Pieter Abbeel.
+\newblock Denoising diffusion probabilistic models.
+\newblock \emph{Advances in neural information processing systems}, 33:\penalty0 6840--6851, 2020.
+
+\bibitem[Inc.(2025)]{pymupdf}
+Artifex~Software Inc.
+\newblock Pymupdf – python binding for mupdf.
+\newblock \url{https://github.com/pymupdf/PyMuPDF}, 2025.
+\newblock Accessed: 2025-01-15.
+
+\bibitem[Iwana et~al.(2016)Iwana, Raza~Rizvi, Ahmed, Dengel, and Uchida]{coverbook}
+Brian~Kenji Iwana, Syed~Tahseen Raza~Rizvi, Sheraz Ahmed, Andreas Dengel, and Seiichi Uchida.
+\newblock Judging a book by its cover.
+\newblock \emph{arXiv preprint arXiv:1610.09204}, 2016.
+
+\bibitem[Lauren{\c{c}}on et~al.(2024)Lauren{\c{c}}on, Saulnier, Tronchon, Bekman, Singh, Lozhkov, Wang, Karamcheti, Rush, Kiela, et~al.]{obelics}
+Hugo Lauren{\c{c}}on, Lucile Saulnier, L{\'e}o Tronchon, Stas Bekman, Amanpreet Singh, Anton Lozhkov, Thomas Wang, Siddharth Karamcheti, Alexander Rush, Douwe Kiela, et~al.
+\newblock Obelics: An open web-scale filtered dataset of interleaved image-text documents.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2024.
+
+\bibitem[Li et~al.(2022)Li, Li, Xiong, and Hoi]{blip}
+Junnan Li, Dongxu Li, Caiming Xiong, and Steven Hoi.
+\newblock Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation.
+\newblock In \emph{International conference on machine learning}, pp.\  12888--12900. PMLR, 2022.
+
+\bibitem[Lin et~al.(2014)Lin, Maire, Belongie, Hays, Perona, Ramanan, Doll{\'a}r, and Zitnick]{mscoco}
+Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Doll{\'a}r, and C~Lawrence Zitnick.
+\newblock Microsoft coco: Common objects in context.
+\newblock In \emph{Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13}, pp.\  740--755. Springer, 2014.
+
+\bibitem[Lin et~al.(2025)Lin, He, Wang, Wang, Li, and Shou]{parrot}
+Yiqi Lin, Conghui He, Alex~Jinpeng Wang, Bin Wang, Weijia Li, and Mike~Zheng Shou.
+\newblock Parrot captions teach clip to spot text.
+\newblock In \emph{European Conference on Computer Vision}, pp.\  368--385. Springer, 2025.
+
+\bibitem[Liu et~al.(2024)Liu, Zhao, Zhuo, Lin, Qiao, Li, and Gao]{lumina_mgpt}
+Dongyang Liu, Shitian Zhao, Le~Zhuo, Weifeng Lin, Yu~Qiao, Hongsheng Li, and Peng Gao.
+\newblock Lumina-mgpt: Illuminate flexible photorealistic text-to-image generation with multimodal generative pretraining.
+\newblock \emph{arXiv preprint arXiv:2408.02657}, 2024.
+
+\bibitem[Liu et~al.(2022)Liu, Garrette, Saharia, Chan, Roberts, Narang, Blok, Mical, Norouzi, and Constant]{ca_aware}
+Rosanne Liu, Dan Garrette, Chitwan Saharia, William Chan, Adam Roberts, Sharan Narang, Irina Blok, RJ~Mical, Mohammad Norouzi, and Noah Constant.
+\newblock Character-aware models improve visual text rendering.
+\newblock \emph{arXiv preprint arXiv:2212.10562}, 2022.
+
+\bibitem[Lu et~al.(2024)Lu, Clark, Lee, Zhang, Khosla, Marten, Hoiem, and Kembhavi]{unifiedio2}
+Jiasen Lu, Christopher Clark, Sangho Lee, Zichen Zhang, Savya Khosla, Ryan Marten, Derek Hoiem, and Aniruddha Kembhavi.
+\newblock Unified-io 2: Scaling autoregressive multimodal models with vision language audio and action.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp.\  26439--26455, 2024.
+
+\bibitem[Ma et~al.(2023)Ma, Zhao, Chen, Wang, Niu, Lu, and Lin]{glyphdraw}
+Jian Ma, Mingjun Zhao, Chen Chen, Ruichen Wang, Di~Niu, Haonan Lu, and Xiaodong Lin.
+\newblock Glyphdraw: Seamlessly rendering text with intricate spatial structures in text-to-image generation.
+\newblock \emph{arXiv preprint arXiv:2303.17870}, 2023.
+
+\bibitem[OpenAI(2024)]{gpt4o}
+OpenAI.
+\newblock Hello gpt-4o, 2024.
+\newblock URL \url{https://openai.com/index/hello-gpt-4o}.
+\newblock Accessed: 2024-09-09.
+
+\bibitem[{OpenCLIP Contributors}(2022)]{openclip}
+{OpenCLIP Contributors}.
+\newblock Openclip: An open source implementation of clip.
+\newblock \url{https://github.com/mlfoundations/open_clip}, 2022.
+\newblock Accessed: 2025-09-24.
+
+\bibitem[{PaddleOCR Contributors}(2020)]{paddleocr}
+{PaddleOCR Contributors}.
+\newblock Paddleocr: Multi-language ocr toolkit.
+\newblock \url{https://github.com/PaddlePaddle/PaddleOCR}, 2020.
+\newblock Accessed: 2025-09-24.
+
+\bibitem[Ramesh et~al.(2021{\natexlab{a}})Ramesh, Pavlov, Goh, Gray, Voss, Radford, Chen, and Sutskever]{dalle}
+Aditya Ramesh, Mikhail Pavlov, Gabriel Goh, Scott Gray, Chelsea Voss, Alec Radford, Mark Chen, and Ilya Sutskever.
+\newblock Zero-shot text-to-image generation.
+\newblock In \emph{International conference on machine learning}, pp.\  8821--8831. Pmlr, 2021{\natexlab{a}}.
+
+\bibitem[Ramesh et~al.(2021{\natexlab{b}})Ramesh, Pavlov, Goh, Gray, Voss, Radford, Chen, and Sutskever]{ramesh2021zero}
+Aditya Ramesh, Mikhail Pavlov, Gabriel Goh, Scott Gray, Chelsea Voss, Alec Radford, Mark Chen, and Ilya Sutskever.
+\newblock Zero-shot text-to-image generation.
+\newblock In \emph{International conference on machine learning}, pp.\  8821--8831. Pmlr, 2021{\natexlab{b}}.
+
+\bibitem[Rombach et~al.(2022)Rombach, Blattmann, Lorenz, Esser, and Ommer]{sd}
+Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bj{\"o}rn Ommer.
+\newblock High-resolution image synthesis with latent diffusion models.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pp.\  10684--10695, 2022.
+
+\bibitem[Schuhmann et~al.(2022)Schuhmann, Beaumont, Vencu, Gordon, Wightman, Cherti, Coombes, Katta, Mullis, Wortsman, et~al.]{laion}
+Christoph Schuhmann, Romain Beaumont, Richard Vencu, Cade Gordon, Ross Wightman, Mehdi Cherti, Theo Coombes, Aarush Katta, Clayton Mullis, Mitchell Wortsman, et~al.
+\newblock Laion-5b: An open large-scale dataset for training next generation image-text models.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35:\penalty0 25278--25294, 2022.
+
+\bibitem[Sefid et~al.(2021)Sefid, Mitra, Wu, and Giles]{autoslidegen}
+Athar Sefid, Prasenjit Mitra, Jian Wu, and C.~Lee Giles.
+\newblock Extractive research slide generation using windowed labeling ranking.
+\newblock In \emph{Proceedings of the Second Workshop on Scholarly Document Processing}. Association for Computational Linguistics, 2021.
+\newblock URL \url{https://aclanthology.org/2021.sdp-1.10}.
+
+\bibitem[Sidorov et~al.(2020)Sidorov, Hu, Rohrbach, and Singh]{textcaps}
+Oleksii Sidorov, Ronghang Hu, Marcus Rohrbach, and Amanpreet Singh.
+\newblock Textcaps: a dataset for image captioning with reading comprehension.
+\newblock In \emph{Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part II 16}, pp.\  742--758. Springer, 2020.
+
+\bibitem[Song \& Ermon(2019)Song and Ermon]{song2019generative}
+Yang Song and Stefano Ermon.
+\newblock Generative modeling by estimating gradients of the data distribution.
+\newblock \emph{Advances in neural information processing systems}, 32, 2019.
+
+\bibitem[Srinivasan et~al.(2021)Srinivasan, Raman, Chen, Bendersky, and Najork]{wit}
+Krishna Srinivasan, Karthik Raman, Jiecao Chen, Michael Bendersky, and Marc Najork.
+\newblock Wit: Wikipedia-based image text dataset for multimodal multilingual machine learning.
+\newblock In \emph{Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval}, SIGIR ’21, 2021.
+
+\bibitem[Sun et~al.(2024)Sun, Jiang, Chen, Zhang, Peng, Luo, and Yuan]{llamagen}
+Peize Sun, Yi~Jiang, Shoufa Chen, Shilong Zhang, Bingyue Peng, Ping Luo, and Zehuan Yuan.
+\newblock Autoregressive model beats diffusion: Llama for scalable image generation.
+\newblock \emph{arXiv preprint arXiv:2406.06525}, 2024.
+
+\bibitem[Sun et~al.(2023)Sun, Yu, Cui, Zhang, Zhang, Wang, Gao, Liu, Huang, and Wang]{emu}
+Quan Sun, Qiying Yu, Yufeng Cui, Fan Zhang, Xiaosong Zhang, Yueze Wang, Hongcheng Gao, Jingjing Liu, Tiejun Huang, and Xinlong Wang.
+\newblock Emu: Generative pretraining in multimodality.
+\newblock In \emph{The Twelfth International Conference on Learning Representations}, 2023.
+
+\bibitem[Team(2024)]{chameleon}
+Chameleon Team.
+\newblock Chameleon: Mixed-modal early-fusion foundation models.
+\newblock \emph{arXiv preprint arXiv:2405.09818}, 2024.
+
+\bibitem[Touvron et~al.(2023)Touvron, Martin, Stone, Albert, Almahairi, Babaei, Bashlykov, Batra, Bhargava, Bhosale, et~al.]{llama2}
+Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et~al.
+\newblock Llama 2: Open foundation and fine-tuned chat models.
+\newblock \emph{arXiv preprint arXiv:2307.09288}, 2023.
+
+\bibitem[Tuo et~al.(2023)Tuo, Xiang, He, Geng, and Xie]{anytext}
+Yuxiang Tuo, Wangmeng Xiang, Jun-Yan He, Yifeng Geng, and Xuansong Xie.
+\newblock Anytext: Multilingual visual text generation and editing.
+\newblock \emph{arXiv preprint arXiv:2311.03054}, 2023.
+
+\bibitem[Van Den~Oord et~al.(2017)Van Den~Oord, Vinyals, et~al.]{van2017neural}
+Aaron Van Den~Oord, Oriol Vinyals, et~al.
+\newblock Neural discrete representation learning.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Wang et~al.(2024)Wang, Bai, Tan, Wang, Fan, Bai, Chen, Liu, Wang, Ge, et~al.]{qwen2_vl}
+Peng Wang, Shuai Bai, Sinan Tan, Shijie Wang, Zhihao Fan, Jinze Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, et~al.
+\newblock Qwen2-vl: Enhancing vision-language model's perception of the world at any resolution.
+\newblock \emph{arXiv preprint arXiv:2409.12191}, 2024.
+
+\bibitem[Wendler(2024)]{renderedtext}
+C.~Wendler.
+\newblock {RenderedText} dataset.
+\newblock \url{https://huggingface.co/datasets/wendlerc/RenderedText}, 2024.
+\newblock Accessed: 2024-11-02.
+
+\bibitem[Wu et~al.(2025)Wu, Li, Zhou, Lin, Gao, Yan, Yin, Bai, Xu, Chen, et~al.]{qwenimage}
+Chenfei Wu, Jiahao Li, Jingren Zhou, Junyang Lin, Kaiyuan Gao, Kun Yan, Sheng-ming Yin, Shuai Bai, Xiao Xu, Yilei Chen, et~al.
+\newblock Qwen-image technical report.
+\newblock \emph{arXiv preprint arXiv:2508.02324}, 2025.
+
+\bibitem[xAI(2025)]{xai2025grok3}
+xAI.
+\newblock Grok 3 beta — the age of reasoning agents.
+\newblock \url{https://x.ai/news/grok-3}, 2025.
+\newblock Accessed: 2025-05-16.
+
+\bibitem[Yang et~al.(2024)Yang, Gui, Yuan, Liang, Ding, Hu, and Chen]{glyphcontrol}
+Yukang Yang, Dongnan Gui, Yuhui Yuan, Weicong Liang, Haisong Ding, Han Hu, and Kai Chen.
+\newblock Glyphcontrol: Glyph conditional control for visual text generation.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2024.
+
+\bibitem[Yu et~al.(2022)Yu, Xu, Koh, Luong, Baid, Wang, Vasudevan, Ku, Yang, Ayan, et~al.]{parti}
+Jiahui Yu, Yuanzhong Xu, Jing~Yu Koh, Thang Luong, Gunjan Baid, Zirui Wang, Vijay Vasudevan, Alexander Ku, Yinfei Yang, Burcu~Karagol Ayan, et~al.
+\newblock Scaling autoregressive models for content-rich text-to-image generation.
+\newblock \emph{arXiv preprint arXiv:2206.10789}, 2\penalty0 (3):\penalty0 5, 2022.
+
+\bibitem[Zhan et~al.(2024)Zhan, Dai, Ye, Zhou, Zhang, Liu, Zhang, Yuan, Zhang, Li, et~al.]{anygpt}
+Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, Dong Zhang, Zhigeng Liu, Xin Zhang, Ruibin Yuan, Ge~Zhang, Linyang Li, et~al.
+\newblock Anygpt: Unified multimodal llm with discrete sequence modeling.
+\newblock \emph{arXiv preprint arXiv:2402.12226}, 2024.
+
+\bibitem[Zhu et~al.(2024)Zhu, Hessel, Awadalla, Gadre, Dodge, Fang, Yu, Schmidt, Wang, and Choi]{mmc4}
+Wanrong Zhu, Jack Hessel, Anas Awadalla, Samir~Yitzhak Gadre, Jesse Dodge, Alex Fang, Youngjae Yu, Ludwig Schmidt, William~Yang Wang, and Yejin Choi.
+\newblock Multimodal c4: An open, billion-scale corpus of images interleaved with text.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2024.
+
+\end{thebibliography}

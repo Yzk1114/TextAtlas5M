@@ -1,0 +1,25 @@
+\begin{abstract}
+Text-conditioned image generation has gained significant attention in recent years and is processing increasingly longer and comprehensive text prompts. 
+In everyday life, dense and intricate text appears in contexts like advertisements, infographics, and signage, where the integration of both text and visuals is essential for conveying complex information. 
+However, despite these advances, the rendering of images containing long-form text remains a persistent challenge, largely due to the limitations of existing datasets, which often focus on shorter and simpler text. 
+To address this gap, we introduce \DatasetName, a novel dataset specifically designed to evaluate \emph{long-text rendering}, where ``long text'' refers not only to textual length but also to layout complexity and semantic richness. 
+In our context, long text involves dense visual content, hierarchical structures, and interleaved text-image layouts, as exemplified by subsets like \textit{TextVisionBlend}, \textit{PPT2Structured}, \textit{CoverBook}, and \textit{TextScenesHQ}. 
+Our dataset consists of 5 million generated and collected images across diverse data types, enabling comprehensive evaluation of large-scale generative models on long-text image generation. 
+We further curate 4,000 human-improved test cases (\EvalDatasetName) across 4 domains, establishing one of the most extensive benchmarks for text rendering. 
+Evaluations suggest that \EvalDatasetName presents significant challenges even for the most advanced proprietary models (e.g., GPT4o), while open-source counterparts show an even larger performance gap. 
+Notably, diffusion and autoregressive models with weak text rendering improve substantially after training on our dataset.
+These findings position \DatasetName as a valuable resource for training and evaluating next-generation text-conditioned image generation models. 
+\end{abstract}
+
+% \begin{abstract}
+% Text-conditioned image generation has gained significant attention in recent years and is processing increasingly longer and comprehensive text prompts. 
+% In everyday life, dense and intricate text appears in contexts like advertisements, infographics, and signage, where the integration of both text and visuals is essential for conveying complex information. 
+% However, despite these advances, the rendering of images containing long-form text remains a persistent challenge, largely due to the limitations of existing datasets, which often focus on shorter and simpler text. 
+% To address this gap, we introduce \DatasetName, a novel dataset specifically designed to evaluate long-text rendering in text-conditioned image generation.
+% Our dataset consists of 5 million long-text generated and collected images across diverse data types, enabling comprehensive evaluation of large-scale generative models on long-text image generation. 
+% We further curate 4000 human-improved test set \EvalDatasetName~ across 4 data domains, establishing one of the most extensive benchmarks for text rendering.
+% Evaluations suggest that the \EvalDatasetName benchmarks present significant challenges even for the most advanced proprietary models (e.g., GPT4o), while their open-source counterparts show an even larger performance gap.
+% These evidences position \DatasetName as a valuable dataset for training and evaluating future-generation text-conditioned image generation models.
+% Notably, models with poor initial text rendering capabilities exhibit significant improvements after being further trained on our dataset.
+% %Datasets are released in \url{https://textatlas5m.github.io}.
+% \end{abstract}

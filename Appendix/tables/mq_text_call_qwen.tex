@@ -1,0 +1,35 @@
+\begin{table}[h]
+    \centering
+    \caption{Rendered text generation for specialized scenes using the QWen2-VL model.}
+    \begin{tcolorbox}[mybox]
+        % \vspace{2mm}
+        \textbf{\textcolor{cyan}{QWen2-VL Synopsis:}} \par
+        \noindent {This is a picture about a movie poster. Please imagine a story for the picture based on the content of the picture, and then output a story outline. Just output the story outline, do not output other content. The story outline should be between 30-60 words.}
+        
+        \vspace{3mm}
+        \textcolor{red}{{QWen2-VL Synopsis res:}} \par
+        \noindent {In a world on the brink of destruction, a lone, mysterious warrior with a fiery sword must infiltrate an impenetrable fortress guarded by an army of elite, dark-magic-wielding soldiers to stop an ancient evil from unleashing a catastrophic apocalypse.}
+        
+        \vspace{3mm}
+        \textcolor{blue}{{QWen2-VL Title:}} \par
+        \noindent {This is a picture about a movie poster. Please imagine a story for the picture based on the content of the picture, and then give the story a title. Only output the title, do not output other content, and the title should not exceed 6 words.}
+        
+        \vspace{3mm}
+        \textcolor{red}{Qwen2-VL Title Result:} \par
+        \noindent {Ember of a Forgotten Reckoning}
+
+        \vspace{3mm}
+        \textcolor{pink}{Final Transformation:}
+
+        \vspace{3mm}
+        \begin{center}
+            \begin{tikzpicture}
+                \node (original) at (0, 0) {\includegraphics[width=0.3\linewidth]{Appendix/images/mq_text_call_qwen_original.png}};
+                \node (arrow) at (3, 0) {\Huge $\rightarrow$};
+                \node (modified) at (6, 0) {\includegraphics[width=0.3\linewidth]{Appendix/images/mq_text_call_qwen_modified.png}};
+            \end{tikzpicture}
+        \end{center}
+    \end{tcolorbox}
+    % \caption{Rendered text generation for specialized scenes using the QWen2-VL model.}
+    \label{tab:mq_text_call_qwen2}
+\end{table}

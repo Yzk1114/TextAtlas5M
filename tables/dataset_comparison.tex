@@ -1,0 +1,23 @@
+\begin{table*}[]
+\footnotesize
+    \centering
+        \caption{
+    \textbf{Dataset Comparison with Existing Text-Rich Image Generation Datasets}.
+    The last two columns detail the sources of automatically generated labels, while the final column presents the average text token length derived from OCR applied to the images.}
+    \resizebox{\linewidth}{!}{
+    \begin{tabular}{ccccc|c}
+    \hline
+        Dataset Name  & Samples & Annotations & Domain & Labels & Token Length   \\
+        \hline
+    TextCaps~\cite{textcaps} & 28K & Caption & Real Image & Human & 26.36 \\
+    SynthText~\cite{SynthText} & 0.8M& OCR & Synthetic Image & Auto & 13.75 \\
+    Marion10M~\cite{textdiffuser} & 10M &  Caption+OCR  & Real Image & Auto & 16.13\\
+        AnyWords3M~\cite{anytext}  & 3M & Caption+OCR & Real Image & Auto  & 9.92\\
+        RenderedText~\cite{renderedtext} &12M & Text & Synthetic Image & Auto & 21.21 \\
+        \hline
+        \DatasetName &5M & Caption+OCR+Text& Real\&Synthetic Image & Auto\&Human & \textbf{148.82} \\
+        \hline
+    \end{tabular}
+    }
+    \label{tab:dataset_comparison}
+\end{table*}

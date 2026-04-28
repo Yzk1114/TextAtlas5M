@@ -1,0 +1,120 @@
+% \begin{table*}[htbp]
+% \centering
+% \footnotesize
+% \caption{Data Level, Datasets, and Annotations Overview.}
+% \begin{tabular}{x{60}lllll}
+% \hline
+% \textbf{Data Split} & \textbf{Dataset Name} & \textbf{\#Samples} & \textbf{Annotations} & Type & Token Length \\ \hline
+% \multirow{3}{*}{Synthetic Images}
+%  & CleanTextSynth & 1,907,721 & Real Text & Pure Text & 70.70\\
+%  & TextVisionBlend & 547,837 & Parsed json+BLIP Caption & Pure Text & 265.62\\
+%  & StyledTextSynth & 426,755 & Human+ QWEN+Intern-VL&Synthetic Image &90.00\\ 
+
+%  \hline
+% \multirow{7}{*}{Real Images}
+%  & PPT2Details  & 298,565 & QWEN2-VL Caption & Powerpoint Image & 121.97\\
+% & PPT2Structured& 96,457 & Parsed json+QWEN2-VL Caption &Powerpoint Image& 774.67 \\
+%  & LongWordsSubset-A & 266,534 & Caption + OCR & Real Image & 38.57 \\
+%  & LongWordsSubset-M & 1,299,992 & Caption + OCR & Real Image & 34.07 \\
+%  & Cover Book&  207,566 & Name + Author + Category &Real Image& 28.01 \\ 
+%    & Paper2Text& 356,658 &PyMuPdf phrased Text & Pure Text & 28.01\\
+%  & TextScenesHQ& 36,576 &Human+Llama+Qwen+GPT4o & Real Image & 120.81\\ 
+%  \hline
+ 
+% In Total & \DatasetName  & \(\sim0.5M\) & - & - & 148.82 \\ \hline
+% \end{tabular}
+% \end{table*}
+
+
+% \usepackage{booktabs}
+% \usepackage[table]{xcolor}
+% \usepackage{multirow}
+% \usepackage{amsmath} % for \text
+
+% \begin{table*}[htbp]
+% \centering
+% \footnotesize
+% \caption{Overview of Data Splits, Datasets, Annotations, and Average Token Lengths.}
+% \begin{tabular}{l l r l l r}
+% \toprule
+% \textbf{Data Split} & \textbf{Dataset Name} & \textbf{\#Samples} & \textbf{Annotations} & \textbf{Type} & \textbf{Token Len.} \\
+% \midrule
+% \rowcolor[HTML]{F2F2F2}
+% \multicolumn{6}{c}{\textbf{Synthetic Images}} \\
+% & CleanTextSynth       & 1,907,721  & Real Text                          & Pure Text        & 70.70  \\
+% & TextVisionBlend      &   547,837  & Parsed JSON + BLIP Caption         & Pure Text        & 265.62 \\
+% & StyledTextSynth      &   426,755  & Human + QWEN + Intern-VL           & Synthetic Image  & 90.00  \\
+% \midrule
+% \rowcolor[HTML]{F2F2F2}
+% \multicolumn{6}{c}{\textbf{Real Images}} \\
+% & PPT2Details          &   298,565  & QWEN2-VL Caption                   & PowerPoint Image & 121.97 \\
+% & PPT2Structured       &    96,457  & Parsed JSON + QWEN2-VL Caption     & PowerPoint Image & 774.67 \\
+% & LongWordsSubset-A    &   266,534  & Caption + OCR                      & Real Image       & 38.57  \\
+% & LongWordsSubset-M    & 1,299,992  & Caption + OCR                      & Real Image       & 34.07  \\
+% & Cover Book           &   207,566  & Name + Author + Category           & Real Image       & 28.01  \\
+% & Paper2Text           &   356,658  & PyMuPdf phrased Text               & Pure Text        & 28.01  \\
+% & TextScenesHQ         &    36,576  & Human + LLaMA + Qwen + GPT4o       & Real Image       & 120.81 \\
+% \midrule
+% \multicolumn{2}{l}{\textbf{In Total}} & \textbf{\textasciitilde0.5M} & - & - & \textbf{148.82} \\
+% \bottomrule
+% \end{tabular}
+% \vspace{1mm}
+% \begin{flushleft}
+% \scriptsize
+% \textbf{Notes:} JSON = structured layout annotation; OCR = optical character recognition; Intern-VL, QWEN, GPT4o, etc. are multimodal captioning models. Token length indicates average number of text tokens per sample.
+% \end{flushleft}
+% \end{table*}
+
+% \usepackage{booktabs}
+% \usepackage[table]{xcolor}
+% \usepackage{threeparttable}
+% \usepackage{array}
+% \usepackage{siunitx}
+
+\renewcommand{\arraystretch}{0.95}
+
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\caption{ Overview of \textit{\DatasetName} Subsets: Data Splits, Annotations, and Average Token Lengths.}
+\vspace{1mm}
+\begin{tabular}{
+    >{\raggedright\arraybackslash}p{2.5cm}
+    >{\raggedleft\arraybackslash}p{1.5cm}
+    % S[table-format=7.0]
+    >{\raggedright\arraybackslash}p{4.0cm}
+    >{\raggedright\arraybackslash}p{2.0cm}
+    >{\raggedleft\arraybackslash}p{1.2cm}
+    % S[table-format=3.2]
+}
+\toprule
+\textbf{Dataset Name} & {\textbf{\#Samples}} & \textbf{Annotations} & \textbf{Type} & \textbf{Token Len.} \\
+\midrule
+
+\rowcolor[HTML]{F2F2F2}
+\multicolumn{5}{c}{\textbf{Synthetic Images}} \\
+CleanTextSynth      & 1,907,721 & Real Text & Pure Text & 70.70 \\
+TextVisionBlend     & 547,837  & JSON + Qwen2-VL Caption & Pure Text & 265.62 \\
+StyledTextSynth     & 426,755  & Human + QWEN Caption & Synthetic Image & 90.00 \\
+
+\midrule
+\rowcolor[HTML]{F2F2F2}
+\multicolumn{5}{c}{\textbf{Real Images}} \\
+PPT2Details         & 298,565  & Qwen2-VL Caption & PowerPoint Image & 121.97 \\
+PPT2Structured      & 96,457   & JSON + Qwen2-VL Caption & PowerPoint Image & 774.67 \\
+LongWordsSubset-A   & 266,534  & Caption + OCR & Real Image & 38.57 \\
+LongWordsSubset-M   & 1,299,992 & Caption + OCR & Real Image & 34.07 \\
+Cover Book          & 207,566  & Name + Author + Category & Real Image & 28.01 \\
+Paper2Text          & 356,658  & PDF Text & Pure Text & 847.85 \\
+TextScenesHQ        & 36,576   & Human + LLaMA + Qwen + GPT4o & Real Image & 120.81 \\
+
+\midrule
+% \rowcolor[HTML]{FAFAFA}
+\rowcolor[HTML]{F2F2F2}
+\multicolumn{5}{c}{\textbf{In Total}} \\
+\multicolumn{1}{l}{\textbf{\DatasetName}} & {\textbf{\textasciitilde5M}} & \textemdash & \textemdash & \textbf{148.82} \\
+\bottomrule
+\end{tabular}
+
+\vspace{1mm}
+\end{table*}
