@@ -1,0 +1,28 @@
+# 26 个 TextScenesHQ-CN 主题
+topics:
+  - {name: product_label, cn: 产品标签}
+  - {name: billboard, cn: 户外广告牌}
+  - {name: packing_box, cn: 包装盒}
+  - {name: monitor, cn: 显示屏}
+  - {name: instruction_manual, cn: 说明书}
+  - {name: booklet_page, cn: 册页}
+  - {name: phone_screenshot, cn: 手机截屏}
+  - {name: wall_decal, cn: 墙贴}
+  - {name: floor_poster, cn: 地贴海报}
+  - {name: game_live, cn: 游戏直播}
+  - {name: oled_display, cn: OLED屏}
+  - {name: protest_marches, cn: 标语条幅}
+  - {name: weather_report, cn: 天气预报}
+  - {name: noticeboard, cn: 公告板}
+  - {name: news_show, cn: 新闻播报}
+  - {name: blackboard_classroom, cn: 黑板教室}
+  - {name: digital_display, cn: 数字屏}
+  - {name: cinema_caption, cn: 影院字幕}
+  - {name: wayfinding_sign, cn: 指引牌}
+  - {name: academic_report, cn: 学术报告}
+  - {name: alumni_profile, cn: 校友档案}
+  - {name: banner, cn: 横幅}
+  - {name: clothes_text, cn: 衣物印字}
+  - {name: store_sign, cn: 店招}
+  - {name: bookshelf_label, cn: 书架标签}
+  - {name: subway_signage, cn: 地铁指示}

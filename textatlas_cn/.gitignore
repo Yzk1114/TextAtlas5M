@@ -1,0 +1,14 @@
+data/raw/
+data/interim/
+data/output/
+data/fonts/*.ttf
+data/fonts/*.otf
+data/.cache/
+data/models/
+data/corpus/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.cache/
+.env

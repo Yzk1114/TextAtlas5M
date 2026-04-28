@@ -1,0 +1,64 @@
+# Default configuration for TextAtlas-CN pipelines.
+# All paths are relative to the repository root unless absolute.
+project_root: .
+
+paths:
+  data_root: data
+  raw_root: data/raw
+  interim_root: data/interim
+  output_root: data/output
+  fonts_root: data/fonts
+  corpus_root: data/corpus
+  topics_root: data/topics
+  templates_root: data/templates
+  cache_root: data/.cache
+
+random_seed: 20260428
+
+llm:
+  default_provider: dashscope          # one of: openai, dashscope, deepseek, zhipu
+  default_model: qwen2.5-72b-instruct
+  request_timeout: 60
+  max_retries: 5
+  cache: true
+
+vlm:
+  default_provider: dashscope
+  default_model: qwen2.5-vl-72b-instruct
+  request_timeout: 90
+  max_retries: 5
+  cache: true
+
+t2i:
+  default_provider: dashscope          # cogview / hunyuan / kolors / sd35 / dashscope-cogview
+  default_model: cogview-4
+  width: 1024
+  height: 1024
+  steps: 28
+  guidance_scale: 4.5
+
+ocr:
+  primary: paddleocr            # paddleocr | easyocr | cnocr | qwen-vl-ocr
+  paddleocr:
+    use_gpu: false
+    lang: ch
+    det_model_dir: null
+    rec_model_dir: null
+    cls_model_dir: null
+
+quality:
+  min_chinese_ratio: 0.95
+  min_unique_word_ratio: 0.30
+  max_consecutive_repeat: 3
+  min_text_chars: 7
+  ocr_cer_threshold: 0.10
+  semantic_dedup_threshold: 0.90
+  ban_nsfw: true
+  ban_watermark: true
+  face_blur: true
+
+export:
+  format: jsonl                 # jsonl | webdataset | parquet
+  shard_size: 5000
+  image_format: png
+  image_quality: 95

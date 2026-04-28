@@ -1,0 +1,20 @@
+在{scene_caption}的画面中，可以清晰地看到文字「{rendered_text}」。
+{scene_caption}画面里写着：{rendered_text}
+整张图描绘了{scene_caption}，其中显著呈现的文字内容为：{rendered_text}。
+{scene_caption}场景中包含以下文字信息——{rendered_text}
+图片以{scene_caption}为背景，文字部分为：「{rendered_text}」。
+本图展示了{scene_caption}，其上文字按从上到下从左到右的顺序为：{rendered_text}。
+请生成一张{scene_caption}的图像，画面中需要清楚地呈现文字：{rendered_text}。
+图像主体是{scene_caption}，其中渲染的中文文字内容为：{rendered_text}。
+{scene_caption}。文字内容（请按位置渲染）：{rendered_text}
+请绘制{scene_caption}，并在合适位置写入文字：{rendered_text}。
+画面：{scene_caption}；文本：{rendered_text}。
+{scene_caption}，画面中以醒目的方式展示文字「{rendered_text}」。
+该图为{scene_caption}，画面文字逐行内容如下：{rendered_text}。
+{scene_caption}。请按照原图的字体、字号与位置，渲染如下文字：{rendered_text}。
+设计稿：{scene_caption}；需要插入的中文文字：{rendered_text}。
+{scene_caption} 文案：{rendered_text}
+{scene_caption}，并将以下中文内容自然地排版于图像中：{rendered_text}。
+画面里是{scene_caption}，醒目的文字写道：{rendered_text}。
+请基于{scene_caption}进行绘图，并将文字内容{rendered_text}清晰地呈现出来。
+{scene_caption}的场景中嵌入了若干段中文文字：{rendered_text}。

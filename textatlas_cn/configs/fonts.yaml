@@ -1,0 +1,68 @@
+# Curated open-source Chinese fonts. Run `prepare_fonts.py` to download.
+# license: SIL OFL / Apache 2.0 / 自由商用
+fonts:
+  - name: NotoSansCJKSC-Regular
+    family: 黑体
+    file: NotoSansCJKsc-Regular.otf
+    url: https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf
+    license: SIL-OFL
+  - name: NotoSerifCJKSC-Regular
+    family: 宋体
+    file: NotoSerifCJKsc-Regular.otf
+    url: https://github.com/notofonts/noto-cjk/raw/main/Serif/OTF/SimplifiedChinese/NotoSerifCJKsc-Regular.otf
+    license: SIL-OFL
+  - name: SourceHanSerifSC-Bold
+    family: 宋体
+    file: SourceHanSerifSC-Bold.otf
+    url: https://github.com/adobe-fonts/source-han-serif/raw/release/OTF/SimplifiedChinese/SourceHanSerifSC-Bold.otf
+    license: SIL-OFL
+  - name: SourceHanSansSC-Bold
+    family: 黑体
+    file: SourceHanSansSC-Bold.otf
+    url: https://github.com/adobe-fonts/source-han-sans/raw/release/OTF/SimplifiedChinese/SourceHanSansSC-Bold.otf
+    license: SIL-OFL
+  - name: AlibabaPuHuiTi-Regular
+    family: 黑体
+    file: AlibabaPuHuiTi-2-55-Regular.ttf
+    url: https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.ttf
+    license: 阿里巴巴普惠体免费商用
+  - name: AlibabaPuHuiTi-Bold
+    family: 黑体
+    file: AlibabaPuHuiTi-2-85-Bold.ttf
+    url: https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-85-Bold/AlibabaPuHuiTi-2-85-Bold.ttf
+    license: 阿里巴巴普惠体免费商用
+  - name: SmileySans
+    family: 艺术体
+    file: SmileySans-Oblique.ttf
+    url: https://github.com/atelier-anchor/smiley-sans/releases/latest/download/SmileySans-Oblique.ttf
+    license: SIL-OFL
+  - name: ZCOOLKuaiLe
+    family: 艺术体
+    file: ZCOOLKuaiLe-Regular.ttf
+    url: https://fonts.gstatic.com/s/zcoolkuaile/v9/tssqApdaRQokwFjFJjvM6h2WpozzoXhC2g.ttf
+    license: SIL-OFL
+  - name: ZCOOLXiaoWei
+    family: 楷体
+    file: ZCOOLXiaoWei-Regular.ttf
+    url: https://fonts.gstatic.com/s/zcoolxiaowei/v8/i7dMIFFrTRywPpUVX9_RJyM1YFKQHwyVd3U.ttf
+    license: SIL-OFL
+  - name: LXGWWenKai-Regular
+    family: 行楷
+    file: LXGWWenKai-Regular.ttf
+    url: https://github.com/lxgw/LxgwWenKai/releases/latest/download/LXGWWenKai-Regular.ttf
+    license: SIL-OFL
+  - name: LongCang
+    family: 行书
+    file: LongCang-Regular.ttf
+    url: https://fonts.gstatic.com/s/longcang/v9/LYjAdGP8kkgoTec8zkRgrXArXN7HWQ.ttf
+    license: SIL-OFL
+  - name: MaShanZheng
+    family: 行书
+    file: MaShanZheng-Regular.ttf
+    url: https://fonts.gstatic.com/s/mashanzheng/v10/NaPecZTRCLxvwo41b4gvzkXaRMTsDIRS.ttf
+    license: SIL-OFL
+  - name: MaShanZheng-DeYi
+    family: 艺术体
+    file: DeYiHei.ttf
+    url: https://github.com/atelier-anchor/dingtalk-jinbu-ti/raw/main/fonts/DingTalkJinBuTi.ttf
+    license: SIL-OFL
