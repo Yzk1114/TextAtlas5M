@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textatlas-zh-builder"
+version = "0.1.0"
+description = "Reproducible Chinese dataset construction tools for long-text image rendering."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "Pillow>=10.0.0",
+    "PyMuPDF>=1.24.0",
+    "numpy>=1.24.0",
+    "PyYAML>=6.0.0",
+    "tqdm>=4.66.0",
+]
+
+[project.optional-dependencies]
+ocr = ["easyocr>=1.7.0"]
+semantic = ["sentence-transformers>=2.7.0", "scikit-learn>=1.4.0"]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+textatlas-zh = "textatlas_zh_builder.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["textatlas_zh_builder*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

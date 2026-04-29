@@ -1,0 +1,25 @@
+seed: 42
+language: zh
+fonts:
+  directories:
+    - /usr/share/fonts
+  files: []
+clean_text:
+  width: 1024
+  height: 1024
+  margin: 72
+  min_font_size: 28
+  max_font_size: 58
+  max_units: 256
+filter:
+  min_units: 10
+  min_unique_ratio: 0.3
+  max_consecutive_repeat: 3
+  min_cjk_ratio: 0.2
+interleave:
+  page_width: 1024
+  page_height: 1024
+  margin: 56
+  columns: 2
+  font_size: 18
+  max_text_units_per_box: 80
