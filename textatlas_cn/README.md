@@ -1,8 +1,9 @@
-# TextAtlas-CN：中文长文本富图像数据集复现框架
+# TextAtlas-CN / TextAtlas-Parallel：中文 + 中英平行 富文本图像数据集复现框架
 
-本仓库面向论文 *TextAtlas5M: A Large-Scale Dataset for Long and Structured Text Image Generation* 中的 9 个子集（CleanTextSynth、TextVisionBlend、StyledTextSynth、PPT2Details、PPT2Structured、Paper2Text、CoverBook、LongWordsSubset、TextScenesHQ）以及评测集 TextAtlasEval，提供面向 **简体中文长文本/富文本图像数据** 构造的端到端复现管线。
+本仓库面向论文 *TextAtlas5M: A Large-Scale Dataset for Long and Structured Text Image Generation* 中的 9 个子集（CleanTextSynth、TextVisionBlend、StyledTextSynth、PPT2Details、PPT2Structured、Paper2Text、CoverBook、LongWordsSubset、TextScenesHQ）以及评测集 TextAtlasEval，提供两套端到端复现管线：
 
-> 整体方案见 [`docs/DESIGN.md`](docs/DESIGN.md)。各子集的具体实现位于 `textatlas_cn/subsets/<subset>/`。
+1. **TextAtlas-CN**：简体中文版本，整体方案见 [`docs/DESIGN.md`](docs/DESIGN.md)，CLI 入口为 `textatlas_cn/scripts/build_<subset>.py`。
+2. **TextAtlas-Parallel**：完全平行的 **中英双语** 版本——除了渲染的文字语言（以及为该语言配对的字体）之外，背景、版式、bbox、`pair_id` 都严格相同；详见 [`docs/BILINGUAL.md`](docs/BILINGUAL.md)，CLI 入口为 `textatlas_cn/scripts/build_<subset>_parallel.py`。
 
 ## 与原论文关键差异
 

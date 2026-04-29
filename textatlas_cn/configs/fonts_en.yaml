@@ -1,0 +1,53 @@
+# Open-source English fonts paired with the zh registry. Run
+# `python -m textatlas_cn.scripts.prepare_fonts_en` to download.
+fonts:
+  - name: NotoSans-Regular
+    family: sans
+    file: NotoSans-Regular.ttf
+    url: https://github.com/notofonts/latin-greek-cyrillic/raw/main/fonts/NotoSans/full/ttf/NotoSans-Regular.ttf
+    license: SIL-OFL
+  - name: NotoSans-Bold
+    family: sans
+    file: NotoSans-Bold.ttf
+    url: https://github.com/notofonts/latin-greek-cyrillic/raw/main/fonts/NotoSans/full/ttf/NotoSans-Bold.ttf
+    license: SIL-OFL
+  - name: NotoSerif-Regular
+    family: serif
+    file: NotoSerif-Regular.ttf
+    url: https://github.com/notofonts/latin-greek-cyrillic/raw/main/fonts/NotoSerif/full/ttf/NotoSerif-Regular.ttf
+    license: SIL-OFL
+  - name: SourceSerifPro-Regular
+    family: serif
+    file: SourceSerif4-Regular.otf
+    url: https://github.com/adobe-fonts/source-serif/raw/release/OTF/SourceSerif4-Regular.otf
+    license: SIL-OFL
+  - name: SourceSansPro-Regular
+    family: sans
+    file: SourceSans3-Regular.otf
+    url: https://github.com/adobe-fonts/source-sans/raw/release/OTF/SourceSans3-Regular.otf
+    license: SIL-OFL
+  - name: Lato-Regular
+    family: sans
+    file: Lato-Regular.ttf
+    url: https://github.com/google/fonts/raw/main/ofl/lato/Lato-Regular.ttf
+    license: SIL-OFL
+  - name: PlayfairDisplay-Regular
+    family: display
+    file: PlayfairDisplay-Regular.ttf
+    url: https://github.com/google/fonts/raw/main/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf
+    license: SIL-OFL
+  - name: BebasNeue-Regular
+    family: display
+    file: BebasNeue-Regular.ttf
+    url: https://github.com/google/fonts/raw/main/ofl/bebasneue/BebasNeue-Regular.ttf
+    license: SIL-OFL
+  - name: DancingScript-Regular
+    family: script
+    file: DancingScript-Regular.ttf
+    url: https://github.com/google/fonts/raw/main/ofl/dancingscript/DancingScript%5Bwght%5D.ttf
+    license: SIL-OFL
+  - name: GreatVibes-Regular
+    family: script
+    file: GreatVibes-Regular.ttf
+    url: https://github.com/google/fonts/raw/main/ofl/greatvibes/GreatVibes-Regular.ttf
+    license: SIL-OFL

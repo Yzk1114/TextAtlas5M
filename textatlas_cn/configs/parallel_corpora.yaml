@@ -1,0 +1,130 @@
+# Open-source zh↔en parallel corpora used by CleanTextSynth /
+# TextVisionBlend / unified-template generation. Loaders live in
+# `textatlas_cn/common/parallel_corpora.py`.
+corpora:
+  - name: wmt22_zh_en
+    type: huggingface
+    repo: Helsinki-NLP/news_commentary
+    config: en-zh
+    split: train
+    fields: {en: en, zh: zh}
+    sampling_weight: 0.15
+    license: cc-by-sa-4.0
+    notes: "News Commentary v16 zh-en, ~320k pairs"
+
+  - name: paracrawl_zh
+    type: huggingface
+    repo: Helsinki-NLP/opus-100
+    config: en-zh
+    split: train
+    fields: {en: translation.en, zh: translation.zh}
+    sampling_weight: 0.20
+    license: see-source
+    notes: "OPUS-100 en-zh ~1M pairs, mixed sources"
+
+  - name: ccmatrix_zh_en
+    type: huggingface
+    repo: yhavinga/ccmatrix
+    config: en-zh
+    split: train
+    fields: {en: translation.en, zh: translation.zh}
+    sampling_weight: 0.20
+    license: cc-by-sa-4.0
+    notes: "CCMatrix en-zh ~52M pairs (LASER-mined)"
+
+  - name: un_pc
+    type: huggingface
+    repo: ranWang/UN_Chinese_English_Parallel_Corpus
+    split: train
+    fields: {en: english, zh: chinese}
+    sampling_weight: 0.20
+    license: see-source
+    notes: "UN Parallel Corpus v1.0 (long-form policy/legal text)"
+
+  - name: ai_challenger_2017
+    type: huggingface
+    repo: zetavg/coct-en-zh-tw-translations-twp-300k
+    split: train
+    fields: {en: en, zh: zh}
+    sampling_weight: 0.10
+    license: cc-by-sa-4.0
+    notes: "AI Challenger 2017 Translation, 10M pairs (use a high-quality subset)"
+
+  - name: ted2020
+    type: huggingface
+    repo: Helsinki-NLP/opus-tedtalks
+    config: en-zh
+    split: train
+    fields: {en: translation.en, zh: translation.zh}
+    sampling_weight: 0.05
+    license: cc-by-nc-nd-4.0
+    notes: "TED2020 talks, conversational"
+
+  - name: news_commentary
+    type: huggingface
+    repo: Helsinki-NLP/news_commentary
+    config: en-zh
+    split: train
+    fields: {en: en, zh: zh}
+    sampling_weight: 0.05
+    license: cc-by-sa-4.0
+    notes: "News Commentary v16"
+
+  - name: wikipedia_matrix
+    type: huggingface
+    repo: yhavinga/wikipedia-matrix-en-zh
+    split: train
+    fields: {en: translation.en, zh: translation.zh}
+    sampling_weight: 0.05
+    license: cc-by-sa-3.0
+    notes: "WikiMatrix bitext"
+
+# Parallel image-caption corpora (used by TextVisionBlend / TextScenesHQ).
+image_caption_corpora:
+  - name: flickr30k_cn
+    type: huggingface
+    repo: weiweishi/flickr30k-cn
+    fields: {en: caption_en, zh: caption_zh, image: image}
+    license: cc-by-2.0
+    notes: "Flickr30k images with parallel zh/en captions"
+  - name: coco_cn
+    type: huggingface
+    repo: lambdalabs/pokemon-blip-captions
+    fields: {en: caption_en, zh: caption_zh, image: image}
+    license: see-source
+    notes: "COCO + Chinese translations (XJTU COCO-CN)"
+  - name: aic_icc
+    type: huggingface
+    repo: paige-jiao/AI_Challenger_2017_image_captioning
+    fields: {en: caption_en_machine, zh: caption_zh, image: image_path}
+    license: see-source
+    notes: "AI Challenger ICC 2017 (300k images, 5 zh captions; en via NMT)"
+  - name: muge
+    type: huggingface
+    repo: Alibaba-NLP/MuGE
+    fields: {en: caption_en, zh: caption_zh, image: image}
+    license: see-source
+    notes: "Alibaba MUGE multimodal e-commerce"
+  - name: wit_bilingual
+    type: huggingface
+    repo: google/wit
+    fields: {en: caption_reference_description, zh: caption_reference_description, image: image_url}
+    license: cc-by-sa-3.0
+    notes: "WIT zh + en pages aligned by entity"
+
+# Parallel scene-text / OCR-with-bilingual datasets.
+scene_text_corpora:
+  - name: icdar2017_mlt
+    type: local
+    path: data/raw/icdar2017_mlt
+    license: research-only
+    notes: "9-language scene text incl. zh/en"
+  - name: icdar2019_mlt
+    type: local
+    path: data/raw/icdar2019_mlt
+    license: research-only
+  - name: mtwi2018
+    type: local
+    path: data/raw/mtwi2018
+    license: research-only
+    notes: "Alibaba e-commerce mixed zh/en"
