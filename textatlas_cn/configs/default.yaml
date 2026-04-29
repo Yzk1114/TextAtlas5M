@@ -8,6 +8,7 @@ paths:
   interim_root: data/interim
   output_root: data/output
   fonts_root: data/fonts
+  fonts_en_root: data/fonts_en
   corpus_root: data/corpus
   topics_root: data/topics
   templates_root: data/templates
@@ -45,6 +46,17 @@ ocr:
     det_model_dir: null
     rec_model_dir: null
     cls_model_dir: null
+
+parallel:
+  enabled: true
+  default_anchor_lang: en               # which side picks the length bin
+  zh_to_en_char_ratio: 0.55             # empirical UN-PC/WMT22/CCMatrix ratio
+  pair_length_tolerance: 0.45           # drop pair if zh/en chars ratio is far off
+  font_pair_style_random: true
+  translate_provider: dashscope
+  translate_model: qwen2.5-72b-instruct
+  bge_m3_threshold: 0.78                # min cross-lingual semantic similarity
+  back_translation_threshold: 0.55      # min en→zh→en bge-m3 sim
 
 quality:
   min_chinese_ratio: 0.95
